@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Thu Jul 25 14:42:34 CEST 2024 - zpetrova@suse.de
+
+- SUSEConnect fails on redhat.repo (bsc#1228267)
+
+-------------------------------------------------------------------
 Fri Jun 28 23:55:02 CEST 2024 - zpetrova@suse.de
 
 - fixes for RES7-LTSS and OL7-LTSS clients
