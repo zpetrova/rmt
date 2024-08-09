@@ -181,7 +181,7 @@ if [[ ${SLL_version} -gt 7 ]]; then
     echo "Disabling all repositories"
     $DNF config-manager --disable $(dnf repolist -q | awk '{ print $1 }' | grep -v repo)
     #Repositories should be removed rather than just disabled (see bsc#1228267)
-    rm -f /etc/yum.repo.d/redhat.repo
+    rm -f /etc/yum.repos.d/redhat.repo
     # sed -i 's/^enabled=1/enabled=0/' /etc/yum.repos.d/*           
     # on RHEL9 (not RHEL8) redhat-release is protected and cannot be updated to sll-release
     if [ -f /etc/dnf/protected.d/redhat-release.conf ]; then
