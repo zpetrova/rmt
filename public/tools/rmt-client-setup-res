@@ -126,7 +126,6 @@ if [ $? -ne 0 ]; then
 fi
 
 if [ -x $UPDATE_CA_TRUST ]; then
-    $UPDATE_CA_TRUST enable
     $UPDATE_CA_TRUST extract
 fi
 
